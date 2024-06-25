@@ -1,0 +1,200 @@
+* { /* usado para eliminar o estilo predefinido pelo navegador*/
+   margin: 0%;
+   padding: 0%; /*Formata o espaço interno da img*/
+   box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+ header { /*usamos na propiedade pai para que seja aplicado nos filhos*/
+    background-color: #111111;
+    width: 100%;
+    padding: 8px 24px;
+    position: fixed;
+    top: 0;
+    max-width: 100%;
+}
+
+
+header .container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 8px;
+    column-gap: 24px;
+ }
+header  img {
+    width: 180px;
+}
+header ul {
+    list-style: none;  
+    display: flex;
+    
+}
+header ul li + li {
+    margin-left: 24px;
+}
+header a {
+    color: #ebebeb;
+} 
+header a:hover, 
+header a:focus { /*Focos na navegação*/
+    color: #f13239;
+    border-bottom: 1px solid #f13239;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+a {
+    padding: 2px 0;
+    transition: color 0.5s;
+    text-decoration: none;
+    border-bottom: 1px solid #f13239;
+}
+.container {
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.dark-link {
+    color: #f13239;
+    border-bottom: 1px solid #f13239;
+}
+.dark-link:hover {
+    color: #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+.hero {
+    height: 320px;
+    padding: 24px;
+
+    background-image: url(../imagens/banner.jpg);
+    background-size: cover; /*ajuste da imagem*/
+    background-position: center 25%;
+    
+    display: flex;
+    flex-direction: column;;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:  61px;
+}
+.hero h1 {
+    color: #ebebeb;
+    font-size: 36px;
+    text-align: center;
+    /*background-color: pink;*/
+}
+
+
+.gallery {
+    padding: 64px 24px 96px;
+}
+.gallery h2 {
+    color: #111111;
+    margin-bottom: 32px;
+    border-left: 6px solid #f13239;
+    padding-left: 8px;
+}
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;/*Quebra*/
+    gap: 24px;/*espaço entre as imagens*/
+}
+.gallery-item {
+    position: relative;
+    flex: 1 1 250px;
+}
+
+.gallery-item:hover .image-desc {
+    opacity: 1;
+   
+    pointer-events: auto;
+}
+
+.gallery-item:hover figcaption {
+    visibility: visible;
+    opacity: 1;
+}
+
+.gallery-row figure img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.gallery-row figure figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+ figure {
+   flex: 1 1 250px;
+}
+.gallery-row figure img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.gallery figcaption {
+    font-weight: bold;
+}
+.historia {
+   padding: 92px 24px 0;
+
+    background-color: #111111;
+    color: #ebebeb;
+    border-top: 4px solid #f13239;
+}
+.historia .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid #f13239;
+    gap: 24px;
+
+}
+
+.historia .container .coluna {
+    flex: 1 1 350px;
+}
+.historia .container img {
+    width: 100%;
+    display: block;
+}
+
+.historia h2 {
+    margin-bottom: 32px;
+    border-left: 6px solid #f13239;
+    padding-left: 8px;
+}
+
+.historia p + p {
+    margin-top: 24px;
+}
+
+footer {
+    padding: 64px 24px;
+    color:#ebebeb;
+    background-color: #111111;
+    text-align: center;
+}
+
+
+footer p + p {
+    margin-bottom: 24px;
+}
+
+
