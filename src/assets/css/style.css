@@ -1,12 +1,12 @@
-* { /* usado para eliminar o estilo predefinido pelo navegador*/
+* {
    margin: 0%;
-   padding: 0%; /*Formata o espaço interno da img*/
+   padding: 0%; 
    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
 }
- header { /*usamos na propiedade pai para que seja aplicado nos filhos*/
+ header { 
     background-color: #111111;
     width: 100%;
     padding: 8px 24px;
@@ -41,7 +41,7 @@ header a {
     color: #ebebeb;
 } 
 header a:hover, 
-header a:focus { /*Focos na navegação*/
+header a:focus {
     color: #f13239;
     border-bottom: 1px solid #f13239;
 }
@@ -73,7 +73,7 @@ a {
     padding: 24px;
 
     background-image: url(../imagens/banner.jpg);
-    background-size: cover; /*ajuste da imagem*/
+    background-size: cover;
     background-position: center 25%;
     
     display: flex;
@@ -86,7 +86,7 @@ a {
     color: #ebebeb;
     font-size: 36px;
     text-align: center;
-    /*background-color: pink;*/
+   
 }
 
 
@@ -101,8 +101,8 @@ a {
 }
 .gallery-row {
     display: flex;
-    flex-wrap: wrap;/*Quebra*/
-    gap: 24px;/*espaço entre as imagens*/
+    flex-wrap: wrap;
+    gap: 24px;
 }
 .gallery-item {
     position: relative;
